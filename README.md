@@ -2,13 +2,17 @@
 **For Agilent NGS Workstation Option B**
 
 ## Contents ##
-[TOC]
+1. [Description](#Description)
+2. [Requirements](#requirements)
+3. [Installation](#installation)
+4. [Protocol](#protocol)
+5. [License](#license)
 
 ## Description ##
 This document describes how to set up the automated Nextera Rapid Capture protocol for the Agilent NGS Workstation created at NGI Stockholm.
 
 ## Requirements ##
-- Agilent NGS Workstation <font color="orange"><i class="icon-attention"></i><i class="fa fa-exclamation-circle"></i><i><b> Option B only</i></b></font>
+- Agilent NGS Workstation :warning: <i><b>Option B only</i></b>
 - Consumables
    - Eppendorf twin.tec 96 PCR plate (Eppendorf, cat# 0030 128.672 (int); 951020460 (US))
    - Nunc deepwell 1.3 mL plate (Thermo Scientific, cat# 260251)
@@ -64,17 +68,16 @@ Use the import feature in VWorks from `File › Import`in the toolbar and select
 #### Device files ####
 Device files and profiles are system specific and will not be provided. Two different Bravo configurations are used in the NRC protocols (one being the "standard" configuration):
 
-<b><i>Standard configuration</i></b>
-
+##### Standard configuration #####
 Position | Type | Part#
 -------: | ---- | -----
-1--3, 8  | Deck Platepad | G5498b#004
+1&ndash;3, 8  | Deck Platepad | G5498b#004
 4, 6     | Peltier Thermal Station (Inheco) | G5498b#021
 5        | Orbital Shaking Station | G5498b#033
 7        | Magnetic Bead Accessory | G5498b#008
 9        | Thermal Station (ThermoCube) | G5498b#036/7/8
 
-<b><i>Capture configuration</i></b>  
+##### Capture configuration #####
 Same as above but with the following modification:
 
 Position | Type | Part#
@@ -100,7 +103,7 @@ Protocol file | Device file
 See the [VWorks Knowledge Base][device-file] for more information on how to select the device file.
 
 ## Protocol ##
-<font color="red"><i class="icon-attention"></i><i class="fa fa-warning"></i><b> Links not yet available</b></font>
+:warning: **Links not yet available**
 
 See the NGI Stockholm/SciLifeLab [Standard Operating Procedure][sop].
 
@@ -119,6 +122,8 @@ See the NGI Stockholm/SciLifeLab [Standard Operating Procedure][sop].
 The full license can also be found in the file LICENSE and must included when redistributing the software.
 
 *VWorks Automation Control*, *Bravo* and other things relating to the *Agilent NGS Workstation* are trademarks owned by Agilent Technologies, Inc. (Santa Clara, CA 95052-8058, US).
+
+*Nextera Rapid Capture* is a trademark owned by Illumina, Inc. (San Diego, CA 92122 US)
 
 [email]: mailto:joel.gruselius@scilifelab.se "E-mail author"
 [ngi]: https://portal.scilifelab.se/genomics/ "NGI Stockholm"
