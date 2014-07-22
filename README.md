@@ -21,7 +21,7 @@ This document describes how to set up the automated Nextera Rapid Capture protoc
 - Labware definitions*
 - Liquid classes definition*
 
-\* provided in `nextera_labware_liquids.vzp`
+\* provided in `all_labware_liquids.vzp`
 
 #### Included files ####
 ```
@@ -34,7 +34,7 @@ nextera_form.VWForm
 nextera_intermission1.pro
 nextera_intermission2.pro
 nextera_intermission3.pro
-nextera_labware_liquids.vzp
+all_labware_liquids.vzp
 nextera_pcr.pro
 nextera_runset.rst
 nextera_script.js
@@ -63,7 +63,7 @@ and extract to `C:\VWorks Workspace\Protocol Files`
 
 ### Configure ###
 #### Labware and and liquid class definitions ####
-Use the import feature in VWorks from `File › Import`in the toolbar and select the `nextera-labware-liquids.vzp` file included. See the [VWorks Knowledge Base][import] for more information.
+Use the import feature in VWorks from `File › Import`in the toolbar and select the `all_labware_liquids.vzp` file included. See the [VWorks Knowledge Base][import] for more information.
 
 #### Device files ####
 Device files and profiles are system specific and will not be provided. Two different Bravo configurations are used in the NRC protocols (one being the "standard" configuration):
