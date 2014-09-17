@@ -103,7 +103,6 @@ Protocol file | Device file
 See the [VWorks Knowledge Base][device-file] for more information on how to select the device file.
 
 ## Protocol ##
-:warning: **Links not yet available**
 
 See the NGI Stockholm/SciLifeLab [Standard Operating Procedure][sop].
 
@@ -131,7 +130,7 @@ The full license can also be found in the file LICENSE and must included when re
 [zip]: https://github.com/jgruselius/nextera-rapid-capture/archive/master.zip
 [import]: http://www.velocity11.com/techdocs/AutomationSolutionsKB/vworks4_ug/11_Troubleshooting.15.03.html#2005458
 [catalog]: http://www.chem.agilent.com/Library/catalogs/Public/5991-0369EN.pdf
-[sop]: about:blank
+[sop]: http://goo.gl/UAMdzX
 [device-file]: http://www.velocity11.com/techdocs/AutomationSolutionsKB/vworks4_ug/02_CreateProtocolBasic.04.08.html#1981042
 
 ---
