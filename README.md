@@ -120,7 +120,7 @@ See the NGI Stockholm/SciLifeLab [Standard Operating Procedure][sop].
 
 The full license can also be found in the file LICENSE and must included when redistributing the software.
 
-If this method is used to genrate results for publication we ask that you include a reference to this repository, something like:
+If this method is used to generate results for publication we ask that you include a reference to this repository, something like:
 ```
 Automation protocols made available by NGI Sweden at https://github.com/ngi-automation/nextera-rapid-capture
 ```
