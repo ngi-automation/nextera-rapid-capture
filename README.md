@@ -103,7 +103,6 @@ Protocol file | Device file
 See the [VWorks Knowledge Base][device-file] for more information on how to select the device file.
 
 ## Protocol ##
-:warning: **Links not yet available**
 
 See the NGI Stockholm/SciLifeLab [Standard Operating Procedure][sop].
 
@@ -121,6 +120,10 @@ See the NGI Stockholm/SciLifeLab [Standard Operating Procedure][sop].
 
 The full license can also be found in the file LICENSE and must included when redistributing the software.
 
+If this method is used to generate results for publication we ask that you include a reference to this repository, something like:
+```
+Automation protocols made available by NGI Sweden at https://github.com/ngi-automation/nextera-rapid-capture
+```
 *VWorks Automation Control*, *Bravo* and other things relating to the *Agilent NGS Workstation* are trademarks owned by Agilent Technologies, Inc. (Santa Clara, CA 95052-8058, US).
 
 *Nextera Rapid Capture* is a trademark owned by Illumina, Inc. (San Diego, CA 92122 US)
@@ -131,7 +134,7 @@ The full license can also be found in the file LICENSE and must included when re
 [zip]: https://github.com/ngi-automation/nextera-rapid-capture/archive/master.zip
 [import]: http://www.velocity11.com/techdocs/AutomationSolutionsKB/vworks4_ug/11_Troubleshooting.15.03.html#2005458
 [catalog]: http://www.chem.agilent.com/Library/catalogs/Public/5991-0369EN.pdf
-[sop]: about:blank
+[sop]: http://goo.gl/UAMdzX
 [device-file]: http://www.velocity11.com/techdocs/AutomationSolutionsKB/vworks4_ug/02_CreateProtocolBasic.04.08.html#1981042
 
 ---
