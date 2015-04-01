@@ -59,7 +59,7 @@ git clone https://github.com/ngi-automation/nextera-rapid-capture.git
 
 Alternatively, download the compressed folder from:
 [`https://github.com/ngi-automation/nextera-rapid-capture/archive/master.zip`][zip]
-and extract to `C:\VWorks Workspace\Protocol Files`
+and extract to `C:\VWorks Workspace\Protocol Files`. Rename the resulting `nextera-rapid-capture-master` folder to `nextera-rapid-capture`. The path to the folder containing the extracted files should then be `C:\VWorks Workspace\Protocol Files\nextera-rapid-capture`.
 
 ### Configure ###
 #### Labware and and liquid class definitions ####
@@ -128,7 +128,7 @@ The full license can also be found in the file LICENSE and must included when re
 [email]: mailto:joel.gruselius@scilifelab.se "E-mail author"
 [ngi]: https://portal.scilifelab.se/genomics/ "NGI Stockholm"
 [scilife]: http://www.scilifelab.se/platforms/ngi/ "SciLifeLab"
-[zip]: https://github.com/jgruselius/nextera-rapid-capture/archive/master.zip
+[zip]: https://github.com/ngi-automation/nextera-rapid-capture/archive/master.zip
 [import]: http://www.velocity11.com/techdocs/AutomationSolutionsKB/vworks4_ug/11_Troubleshooting.15.03.html#2005458
 [catalog]: http://www.chem.agilent.com/Library/catalogs/Public/5991-0369EN.pdf
 [sop]: about:blank
