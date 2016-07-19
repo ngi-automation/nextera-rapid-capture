@@ -1,8 +1,8 @@
 runset.clear();
 
-var path = "C:/VWorks Workspace/Protocol Files/nextera-rapid-capture";
+var path = "C:/VWorks Workspace/Protocol Files/development/jgr/nextera";
 
-run(path + "/resources/clear_inventory.bat", true);
+run("C:/VWorks Workspace/Protocol Files/facility/resources/clear_inventory.bat", true);
 
 var runsetMode = false;	// Alt settings for library prep runset (true/false)
 var formMode;			// Sets Nextera RC (1) or XT (0) mode
@@ -16,7 +16,7 @@ var purifPresets = {};
 purifPresets["Tagmentation cleanup"] = {sampleVolume:65,beadVolume:65,elutionVolume:20};
 purifPresets["First PCR cleanup"] = {sampleVolume:50,beadVolume:90,elutionVolume:25};
 purifPresets["Second PCR cleanup"] = {sampleVolume:50,beadVolume:90,elutionVolume:30};
-purifPresets["Capture cleanup"] = {sampleVolume:25,beadVolume:45,elutionVolume:25};
+purifPresets["Capture cleanup"] = {sampleVolume:40,beadVolume:45,elutionVolume:25}; // Extra 15 uL sample volume to compensate for foaming
 
 switch(formProtocol) {
 	case "Bead purification":
@@ -25,14 +25,14 @@ switch(formProtocol) {
 		var settings = purifPresets[formPurificationMode];
 		purif.sampleVolume = settings.sampleVolume;
 		purif.beadVolume = settings.beadVolume;
-		purif.eluteVolume = settings.elutionVolume;
+		purif.elutionVolume = settings.elutionVolume;
 		break;
 	case "Library prep":
 		formMode = 1;
 		var settings = purifPresets["Tagmentation cleanup"];
 		purif.sampleVolume = settings.sampleVolume;
 		purif.beadVolume = settings.beadVolume;
-		purif.eluteVolume = settings.elutionVolume;
+		purif.elutionVolume = settings.elutionVolume;
 		pcr.sampleVolume = 20;
 		pcr.reagentVolume = 20;
 		pcr.primerVolume = 10;
@@ -56,5 +56,15 @@ switch(formProtocol) {
 		pcr.reagentVolume = 20;
 		pcr.primerVolume = 5;
 		break;
-		
+}
+
+// Dynamic Pipetting Height 2.0:
+function dph(vol, endHeight) {
+	var v = parseFloat(vol);
+	var e = parseFloat(endHeight);
+	if(v > 0 && e > 0 && !isNaN(v+e)) {
+		return 0.078 - 9.501E-5*v + (0.734-e)/v;
+	} else {
+		throw "ValueException";
+	}
 }

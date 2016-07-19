@@ -2,7 +2,7 @@
 
 *.js     text
 *.txt    text
-*.pro    binary
+*.pro    -text
 *.rst    -text
 *.VWForm -text
 *.png    binary
